@@ -16,22 +16,23 @@ import captionsData from "./captions.json";
 // that never appears in the text or footage.
 const CHROMA_KEY = "#00FF00"; // greenscreen, so ffmpeg's despill filter can clean spill
 
-// minimalist-design-skill (zeke/minimalist-design-skill): single typeface,
-// single weight, monochrome, no color hierarchy - no karaoke/CapCut
-// highlight color here, ever.
-const fontFamily = "IBM Plex Mono Captions Local";
-const TEXT_COLOR = "#FAFAF9"; // dark-mode token from the skill's design-system.md
+// Monochrome, single weight, no color hierarchy - no karaoke/CapCut
+// highlight color here, ever. Font: Space Grotesk (motion-skills /
+// kinetic-typography-skills - a grotesk built for display/kinetic use,
+// reads cleanly in motion, unlike a terminal-mono face).
+const fontFamily = "Space Grotesk Captions Local";
+const TEXT_COLOR = "#FAFAF9";
 
 // Font loading is scoped to this component's own mount (not module-level)
 // so an unrelated composition sharing this bundle can never block on it.
 const useLocalFont = () => {
   const [ready, setReady] = useState(false);
   useEffect(() => {
-    const handle = delayRender("Loading IBM Plex Mono (Captions)");
+    const handle = delayRender("Loading Space Grotesk (Captions)");
     const face = new FontFace(
       fontFamily,
-      `url('${staticFile("fonts/IBMPlexMono-Regular.ttf")}')`,
-      { weight: "400", style: "normal" }
+      `url('${staticFile("fonts/SpaceGrotesk-Medium.ttf")}')`,
+      { weight: "500", style: "normal" }
     );
     face
       .load()
@@ -123,10 +124,10 @@ export const Captions = () => {
               style={{
                 maxWidth: 400,
                 fontFamily,
-                fontWeight: 400,
+                fontWeight: 500,
                 fontSize: 34,
-                lineHeight: 1.6,
-                letterSpacing: 0,
+                lineHeight: 1.4,
+                letterSpacing: "-0.01em",
                 textAlign: "center",
                 color: TEXT_COLOR,
                 textShadow: "0 1px 12px rgba(0,0,0,0.55)",

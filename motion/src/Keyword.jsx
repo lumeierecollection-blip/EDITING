@@ -10,12 +10,13 @@ import {
   continueRender,
 } from "remotion";
 
-// minimalist-design-skill (zeke/minimalist-design-skill): single typeface,
-// single size, single weight - no hierarchy through typography, no
-// ornamentation (no rules, no kickers, no borders-as-decoration).
-const fontFamily = "IBM Plex Mono Keyword Local";
-const BG = "#0C0A09"; // dark-mode token
-const TEXT = "#FAFAF9"; // dark-mode token
+// Single typeface, single size, single weight - no hierarchy through
+// typography, no ornamentation (no rules, no kickers, no borders-as-
+// decoration). Font: Space Grotesk Bold (motion-skills / kinetic-
+// typography-skills - a grotesk built for display/kinetic use).
+const fontFamily = "Space Grotesk Keyword Local";
+const BG = "#0C0A09";
+const TEXT = "#FAFAF9";
 
 // kinetic-typography-skills (iart-ai): word-level mask/clip reveal,
 // ease-out cubic-bezier(0.16,1,0.3,1), 400-600ms per fragment,
@@ -28,11 +29,11 @@ const FADE_OUT_FRAMES = 12;
 const useLocalFont = () => {
   const [ready, setReady] = useState(false);
   useEffect(() => {
-    const handle = delayRender("Loading IBM Plex Mono (Keyword)");
+    const handle = delayRender("Loading Space Grotesk (Keyword)");
     const face = new FontFace(
       fontFamily,
-      `url('${staticFile("fonts/IBMPlexMono-Regular.ttf")}')`,
-      { weight: "400", style: "normal" }
+      `url('${staticFile("fonts/SpaceGrotesk-Bold.ttf")}')`,
+      { weight: "700", style: "normal" }
     );
     face
       .load()
@@ -98,9 +99,10 @@ export const Keyword = ({ text = "", totalFrames = 90 }) => {
         style={{
           opacity: exitFade,
           fontFamily,
-          fontWeight: 400,
-          fontSize: 46,
-          lineHeight: 1.6,
+          fontWeight: 700,
+          fontSize: 48,
+          lineHeight: 1.3,
+          letterSpacing: "-0.01em",
           textAlign: "center",
           color: TEXT,
         }}
