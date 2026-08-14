@@ -1,0 +1,1976 @@
+[
+  {
+    "start": 0.2,
+    "end": 1.821,
+    "words": [
+      {
+        "text": "Dear",
+        "start": 0.2,
+        "end": 0.677
+      },
+      {
+        "text": "younger",
+        "start": 0.677,
+        "end": 1.44
+      },
+      {
+        "text": "me,",
+        "start": 1.44,
+        "end": 1.821
+      }
+    ]
+  },
+  {
+    "start": 1.821,
+    "end": 1.953,
+    "words": [
+      {
+        "text": "I",
+        "start": 1.821,
+        "end": 1.953
+      },
+      {
+        "text": "want",
+        "start": 1.953,
+        "end": 1.953
+      },
+      {
+        "text": "you",
+        "start": 1.953,
+        "end": 1.953
+      }
+    ]
+  },
+  {
+    "start": 1.953,
+    "end": 3.019,
+    "words": [
+      {
+        "text": "to",
+        "start": 1.953,
+        "end": 1.97
+      },
+      {
+        "text": "hear",
+        "start": 1.97,
+        "end": 2.447
+      },
+      {
+        "text": "this.",
+        "start": 2.447,
+        "end": 3.019
+      }
+    ]
+  },
+  {
+    "start": 3.019,
+    "end": 4.254,
+    "words": [
+      {
+        "text": "Didi's",
+        "start": 3.019,
+        "end": 3.687
+      },
+      {
+        "text": "inability",
+        "start": 3.687,
+        "end": 4.061
+      },
+      {
+        "text": "to",
+        "start": 4.061,
+        "end": 4.254
+      }
+    ]
+  },
+  {
+    "start": 4.254,
+    "end": 5.589,
+    "words": [
+      {
+        "text": "love",
+        "start": 4.254,
+        "end": 4.731
+      },
+      {
+        "text": "you",
+        "start": 4.731,
+        "end": 5.113
+      },
+      {
+        "text": "well",
+        "start": 5.113,
+        "end": 5.589
+      }
+    ]
+  },
+  {
+    "start": 5.589,
+    "end": 6.674,
+    "words": [
+      {
+        "text": "was",
+        "start": 5.589,
+        "end": 5.971
+      },
+      {
+        "text": "never",
+        "start": 5.971,
+        "end": 6.543
+      },
+      {
+        "text": "a",
+        "start": 6.543,
+        "end": 6.674
+      }
+    ]
+  },
+  {
+    "start": 6.674,
+    "end": 7.648,
+    "words": [
+      {
+        "text": "proof",
+        "start": 6.674,
+        "end": 6.79
+      },
+      {
+        "text": "that",
+        "start": 6.79,
+        "end": 7.267
+      },
+      {
+        "text": "you",
+        "start": 7.267,
+        "end": 7.648
+      }
+    ]
+  },
+  {
+    "start": 7.648,
+    "end": 9.174,
+    "words": [
+      {
+        "text": "are",
+        "start": 7.648,
+        "end": 8.03
+      },
+      {
+        "text": "unworthy",
+        "start": 8.03,
+        "end": 8.888
+      },
+      {
+        "text": "of",
+        "start": 8.888,
+        "end": 9.174
+      }
+    ]
+  },
+  {
+    "start": 9.174,
+    "end": 10.27,
+    "words": [
+      {
+        "text": "love.",
+        "start": 9.174,
+        "end": 9.746
+      },
+      {
+        "text": "No,",
+        "start": 9.746,
+        "end": 10.128
+      },
+      {
+        "text": "you",
+        "start": 10.128,
+        "end": 10.27
+      }
+    ]
+  },
+  {
+    "start": 10.27,
+    "end": 11.025,
+    "words": [
+      {
+        "text": "were",
+        "start": 10.27,
+        "end": 10.685
+      },
+      {
+        "text": "a",
+        "start": 10.685,
+        "end": 10.876
+      },
+      {
+        "text": "child.",
+        "start": 10.876,
+        "end": 11.025
+      }
+    ]
+  },
+  {
+    "start": 11.025,
+    "end": 11.718,
+    "words": [
+      {
+        "text": "You",
+        "start": 11.025,
+        "end": 11.308
+      },
+      {
+        "text": "were",
+        "start": 11.308,
+        "end": 11.602
+      },
+      {
+        "text": "not",
+        "start": 11.602,
+        "end": 11.718
+      }
+    ]
+  },
+  {
+    "start": 11.718,
+    "end": 13.434,
+    "words": [
+      {
+        "text": "supposed",
+        "start": 11.718,
+        "end": 12.576
+      },
+      {
+        "text": "to",
+        "start": 12.576,
+        "end": 12.862
+      },
+      {
+        "text": "carry",
+        "start": 12.862,
+        "end": 13.434
+      }
+    ]
+  },
+  {
+    "start": 13.434,
+    "end": 15.532,
+    "words": [
+      {
+        "text": "the",
+        "start": 13.434,
+        "end": 13.816
+      },
+      {
+        "text": "responsibility",
+        "start": 13.816,
+        "end": 15.246
+      },
+      {
+        "text": "of",
+        "start": 15.246,
+        "end": 15.532
+      }
+    ]
+  },
+  {
+    "start": 15.532,
+    "end": 17.034,
+    "words": [
+      {
+        "text": "an",
+        "start": 15.532,
+        "end": 15.818
+      },
+      {
+        "text": "adult",
+        "start": 15.818,
+        "end": 16.39
+      },
+      {
+        "text": "inability",
+        "start": 16.39,
+        "end": 17.034
+      }
+    ]
+  },
+  {
+    "start": 17.034,
+    "end": 18.178,
+    "words": [
+      {
+        "text": "to",
+        "start": 17.034,
+        "end": 17.32
+      },
+      {
+        "text": "love",
+        "start": 17.32,
+        "end": 17.797
+      },
+      {
+        "text": "you",
+        "start": 17.797,
+        "end": 18.178
+      }
+    ]
+  },
+  {
+    "start": 18.178,
+    "end": 19.477,
+    "words": [
+      {
+        "text": "well.",
+        "start": 18.178,
+        "end": 18.751
+      },
+      {
+        "text": "And",
+        "start": 18.751,
+        "end": 18.968
+      },
+      {
+        "text": "younger",
+        "start": 18.968,
+        "end": 19.477
+      }
+    ]
+  },
+  {
+    "start": 19.477,
+    "end": 20.134,
+    "words": [
+      {
+        "text": "me,",
+        "start": 19.477,
+        "end": 19.858
+      },
+      {
+        "text": "I",
+        "start": 19.858,
+        "end": 20.049
+      },
+      {
+        "text": "want",
+        "start": 20.049,
+        "end": 20.134
+      }
+    ]
+  },
+  {
+    "start": 20.134,
+    "end": 21.109,
+    "words": [
+      {
+        "text": "you",
+        "start": 20.134,
+        "end": 20.155
+      },
+      {
+        "text": "to",
+        "start": 20.155,
+        "end": 20.441
+      },
+      {
+        "text": "listen",
+        "start": 20.441,
+        "end": 21.109
+      }
+    ]
+  },
+  {
+    "start": 21.109,
+    "end": 22.253,
+    "words": [
+      {
+        "text": "to",
+        "start": 21.109,
+        "end": 21.395
+      },
+      {
+        "text": "this",
+        "start": 21.395,
+        "end": 21.872
+      },
+      {
+        "text": "and",
+        "start": 21.872,
+        "end": 22.253
+      }
+    ]
+  },
+  {
+    "start": 22.253,
+    "end": 23.874,
+    "words": [
+      {
+        "text": "think",
+        "start": 22.253,
+        "end": 22.825
+      },
+      {
+        "text": "about",
+        "start": 22.825,
+        "end": 23.398
+      },
+      {
+        "text": "this",
+        "start": 23.398,
+        "end": 23.874
+      }
+    ]
+  },
+  {
+    "start": 23.874,
+    "end": 25.31,
+    "words": [
+      {
+        "text": "very",
+        "start": 23.874,
+        "end": 24.351
+      },
+      {
+        "text": "carefully.",
+        "start": 24.351,
+        "end": 25.31
+      },
+      {
+        "text": "Maybe",
+        "start": 25.31,
+        "end": 25.31
+      }
+    ]
+  },
+  {
+    "start": 25.31,
+    "end": 26.785,
+    "words": [
+      {
+        "text": "Daddy",
+        "start": 25.31,
+        "end": 25.488
+      },
+      {
+        "text": "was",
+        "start": 25.488,
+        "end": 25.832
+      },
+      {
+        "text": "available",
+        "start": 25.832,
+        "end": 26.785
+      }
+    ]
+  },
+  {
+    "start": 26.785,
+    "end": 29.095,
+    "words": [
+      {
+        "text": "physically,",
+        "start": 26.785,
+        "end": 27.93
+      },
+      {
+        "text": "but",
+        "start": 27.93,
+        "end": 28.311
+      },
+      {
+        "text": "emotionally",
+        "start": 28.311,
+        "end": 29.095
+      }
+    ]
+  },
+  {
+    "start": 29.095,
+    "end": 30.438,
+    "words": [
+      {
+        "text": "not",
+        "start": 29.095,
+        "end": 29.476
+      },
+      {
+        "text": "available.",
+        "start": 29.476,
+        "end": 30.271
+      },
+      {
+        "text": "And",
+        "start": 30.271,
+        "end": 30.438
+      }
+    ]
+  },
+  {
+    "start": 30.438,
+    "end": 31.364,
+    "words": [
+      {
+        "text": "maybe",
+        "start": 30.438,
+        "end": 31.02
+      },
+      {
+        "text": "he",
+        "start": 31.02,
+        "end": 31.036
+      },
+      {
+        "text": "was",
+        "start": 31.036,
+        "end": 31.364
+      }
+    ]
+  },
+  {
+    "start": 31.364,
+    "end": 33.793,
+    "words": [
+      {
+        "text": "available",
+        "start": 31.364,
+        "end": 32.336
+      },
+      {
+        "text": "physically",
+        "start": 32.336,
+        "end": 33.404
+      },
+      {
+        "text": "and",
+        "start": 33.404,
+        "end": 33.793
+      }
+    ]
+  },
+  {
+    "start": 33.793,
+    "end": 35.736,
+    "words": [
+      {
+        "text": "financially,",
+        "start": 33.793,
+        "end": 35.056
+      },
+      {
+        "text": "but",
+        "start": 35.056,
+        "end": 35.444
+      },
+      {
+        "text": "he",
+        "start": 35.444,
+        "end": 35.736
+      }
+    ]
+  },
+  {
+    "start": 35.736,
+    "end": 37.193,
+    "words": [
+      {
+        "text": "never",
+        "start": 35.736,
+        "end": 36.319
+      },
+      {
+        "text": "told",
+        "start": 36.319,
+        "end": 36.804
+      },
+      {
+        "text": "you",
+        "start": 36.804,
+        "end": 37.193
+      }
+    ]
+  },
+  {
+    "start": 37.193,
+    "end": 37.608,
+    "words": [
+      {
+        "text": "that",
+        "start": 37.193,
+        "end": 37.347
+      },
+      {
+        "text": "I'm",
+        "start": 37.347,
+        "end": 37.347
+      },
+      {
+        "text": "proud",
+        "start": 37.347,
+        "end": 37.608
+      }
+    ]
+  },
+  {
+    "start": 37.608,
+    "end": 38.203,
+    "words": [
+      {
+        "text": "of",
+        "start": 37.608,
+        "end": 37.9
+      },
+      {
+        "text": "you.",
+        "start": 37.9,
+        "end": 38.203
+      },
+      {
+        "text": "Younger",
+        "start": 38.203,
+        "end": 38.203
+      }
+    ]
+  },
+  {
+    "start": 38.203,
+    "end": 39.377,
+    "words": [
+      {
+        "text": "me.",
+        "start": 38.203,
+        "end": 38.503
+      },
+      {
+        "text": "And",
+        "start": 38.503,
+        "end": 38.892
+      },
+      {
+        "text": "that",
+        "start": 38.892,
+        "end": 39.377
+      }
+    ]
+  },
+  {
+    "start": 39.377,
+    "end": 39.758,
+    "words": [
+      {
+        "text": "made",
+        "start": 39.377,
+        "end": 39.758
+      },
+      {
+        "text": "you",
+        "start": 39.758,
+        "end": 39.758
+      },
+      {
+        "text": "ask",
+        "start": 39.758,
+        "end": 39.758
+      }
+    ]
+  },
+  {
+    "start": 39.758,
+    "end": 40.657,
+    "words": [
+      {
+        "text": "yourself,",
+        "start": 39.758,
+        "end": 39.88
+      },
+      {
+        "text": "what",
+        "start": 39.88,
+        "end": 40.365
+      },
+      {
+        "text": "is",
+        "start": 40.365,
+        "end": 40.657
+      }
+    ]
+  },
+  {
+    "start": 40.657,
+    "end": 41.221,
+    "words": [
+      {
+        "text": "wrong",
+        "start": 40.657,
+        "end": 40.844
+      },
+      {
+        "text": "with",
+        "start": 40.844,
+        "end": 40.844
+      },
+      {
+        "text": "me?",
+        "start": 40.844,
+        "end": 41.221
+      }
+    ]
+  },
+  {
+    "start": 41.221,
+    "end": 42.581,
+    "words": [
+      {
+        "text": "And",
+        "start": 41.221,
+        "end": 41.609
+      },
+      {
+        "text": "maybe",
+        "start": 41.609,
+        "end": 42.192
+      },
+      {
+        "text": "His",
+        "start": 42.192,
+        "end": 42.581
+      }
+    ]
+  },
+  {
+    "start": 42.581,
+    "end": 44.427,
+    "words": [
+      {
+        "text": "criticism",
+        "start": 42.581,
+        "end": 43.552
+      },
+      {
+        "text": "made",
+        "start": 43.552,
+        "end": 44.038
+      },
+      {
+        "text": "you",
+        "start": 44.038,
+        "end": 44.427
+      }
+    ]
+  },
+  {
+    "start": 44.427,
+    "end": 46.467,
+    "words": [
+      {
+        "text": "always",
+        "start": 44.427,
+        "end": 45.107
+      },
+      {
+        "text": "ask",
+        "start": 45.107,
+        "end": 45.495
+      },
+      {
+        "text": "yourself,",
+        "start": 45.495,
+        "end": 46.467
+      }
+    ]
+  },
+  {
+    "start": 46.467,
+    "end": 47.604,
+    "words": [
+      {
+        "text": "is",
+        "start": 46.467,
+        "end": 46.758
+      },
+      {
+        "text": "ever",
+        "start": 46.758,
+        "end": 47.244
+      },
+      {
+        "text": "anything",
+        "start": 47.244,
+        "end": 47.604
+      }
+    ]
+  },
+  {
+    "start": 47.604,
+    "end": 48.575,
+    "words": [
+      {
+        "text": "that",
+        "start": 47.604,
+        "end": 48.09
+      },
+      {
+        "text": "I",
+        "start": 48.09,
+        "end": 48.284
+      },
+      {
+        "text": "do",
+        "start": 48.284,
+        "end": 48.575
+      }
+    ]
+  },
+  {
+    "start": 48.575,
+    "end": 50.324,
+    "words": [
+      {
+        "text": "ever",
+        "start": 48.575,
+        "end": 49.061
+      },
+      {
+        "text": "good",
+        "start": 49.061,
+        "end": 49.547
+      },
+      {
+        "text": "enough?",
+        "start": 49.547,
+        "end": 50.324
+      }
+    ]
+  },
+  {
+    "start": 50.324,
+    "end": 50.573,
+    "words": [
+      {
+        "text": "And",
+        "start": 50.324,
+        "end": 50.573
+      },
+      {
+        "text": "now",
+        "start": 50.573,
+        "end": 50.573
+      },
+      {
+        "text": "you",
+        "start": 50.573,
+        "end": 50.573
+      }
+    ]
+  },
+  {
+    "start": 50.573,
+    "end": 51.758,
+    "words": [
+      {
+        "text": "have",
+        "start": 50.573,
+        "end": 50.786
+      },
+      {
+        "text": "grown",
+        "start": 50.786,
+        "end": 51.369
+      },
+      {
+        "text": "up.",
+        "start": 51.369,
+        "end": 51.758
+      }
+    ]
+  },
+  {
+    "start": 51.758,
+    "end": 53.409,
+    "words": [
+      {
+        "text": "You've",
+        "start": 51.758,
+        "end": 52.438
+      },
+      {
+        "text": "become",
+        "start": 52.438,
+        "end": 53.118
+      },
+      {
+        "text": "an",
+        "start": 53.118,
+        "end": 53.409
+      }
+    ]
+  },
+  {
+    "start": 53.409,
+    "end": 55.233,
+    "words": [
+      {
+        "text": "adult",
+        "start": 53.409,
+        "end": 53.992
+      },
+      {
+        "text": "that",
+        "start": 53.992,
+        "end": 54.478
+      },
+      {
+        "text": "constantly",
+        "start": 54.478,
+        "end": 55.233
+      }
+    ]
+  },
+  {
+    "start": 55.233,
+    "end": 57.534,
+    "words": [
+      {
+        "text": "need",
+        "start": 55.233,
+        "end": 55.478
+      },
+      {
+        "text": "reassurance.",
+        "start": 55.478,
+        "end": 56.741
+      },
+      {
+        "text": "You",
+        "start": 57.101,
+        "end": 57.534
+      }
+    ]
+  },
+  {
+    "start": 57.534,
+    "end": 58.881,
+    "words": [
+      {
+        "text": "always",
+        "start": 57.534,
+        "end": 58.078
+      },
+      {
+        "text": "think",
+        "start": 58.078,
+        "end": 58.34
+      },
+      {
+        "text": "that",
+        "start": 58.34,
+        "end": 58.881
+      }
+    ]
+  },
+  {
+    "start": 58.881,
+    "end": 60.204,
+    "words": [
+      {
+        "text": "people",
+        "start": 58.881,
+        "end": 59.639
+      },
+      {
+        "text": "leave",
+        "start": 59.639,
+        "end": 60.046
+      },
+      {
+        "text": "and",
+        "start": 60.046,
+        "end": 60.204
+      }
+    ]
+  },
+  {
+    "start": 60.204,
+    "end": 61.349,
+    "words": [
+      {
+        "text": "then",
+        "start": 60.204,
+        "end": 60.745
+      },
+      {
+        "text": "you",
+        "start": 60.745,
+        "end": 61.178
+      },
+      {
+        "text": "leave",
+        "start": 61.178,
+        "end": 61.349
+      }
+    ]
+  },
+  {
+    "start": 61.349,
+    "end": 63.298,
+    "words": [
+      {
+        "text": "first.",
+        "start": 61.349,
+        "end": 62.107
+      },
+      {
+        "text": "You",
+        "start": 62.107,
+        "end": 62.54
+      },
+      {
+        "text": "always",
+        "start": 62.54,
+        "end": 63.298
+      }
+    ]
+  },
+  {
+    "start": 63.298,
+    "end": 65.573,
+    "words": [
+      {
+        "text": "mistakenly",
+        "start": 63.298,
+        "end": 64.25
+      },
+      {
+        "text": "mistaken",
+        "start": 64.25,
+        "end": 64.423
+      },
+      {
+        "text": "boundaries",
+        "start": 64.423,
+        "end": 65.573
+      }
+    ]
+  },
+  {
+    "start": 65.573,
+    "end": 66.592,
+    "words": [
+      {
+        "text": "as",
+        "start": 65.573,
+        "end": 65.898
+      },
+      {
+        "text": "a",
+        "start": 65.898,
+        "end": 66.114
+      },
+      {
+        "text": "rejection.",
+        "start": 66.114,
+        "end": 66.592
+      }
+    ]
+  },
+  {
+    "start": 66.592,
+    "end": 67.058,
+    "words": [
+      {
+        "text": "Younger",
+        "start": 66.592,
+        "end": 66.592
+      },
+      {
+        "text": "me,",
+        "start": 66.592,
+        "end": 66.842
+      },
+      {
+        "text": "I",
+        "start": 66.842,
+        "end": 67.058
+      }
+    ]
+  },
+  {
+    "start": 67.058,
+    "end": 67.506,
+    "words": [
+      {
+        "text": "want",
+        "start": 67.058,
+        "end": 67.506
+      },
+      {
+        "text": "you",
+        "start": 67.506,
+        "end": 67.506
+      },
+      {
+        "text": "to",
+        "start": 67.506,
+        "end": 67.506
+      }
+    ]
+  },
+  {
+    "start": 67.506,
+    "end": 68.806,
+    "words": [
+      {
+        "text": "heal",
+        "start": 67.506,
+        "end": 67.831
+      },
+      {
+        "text": "and",
+        "start": 67.831,
+        "end": 68.264
+      },
+      {
+        "text": "heal",
+        "start": 68.264,
+        "end": 68.806
+      }
+    ]
+  },
+  {
+    "start": 68.806,
+    "end": 70.217,
+    "words": [
+      {
+        "text": "for",
+        "start": 68.806,
+        "end": 69.024
+      },
+      {
+        "text": "yourself.",
+        "start": 69.024,
+        "end": 69.844
+      },
+      {
+        "text": "And",
+        "start": 69.844,
+        "end": 70.217
+      }
+    ]
+  },
+  {
+    "start": 70.217,
+    "end": 71.826,
+    "words": [
+      {
+        "text": "your",
+        "start": 70.217,
+        "end": 70.31
+      },
+      {
+        "text": "healing",
+        "start": 70.31,
+        "end": 71.176
+      },
+      {
+        "text": "makes",
+        "start": 71.176,
+        "end": 71.826
+      }
+    ]
+  },
+  {
+    "start": 71.826,
+    "end": 72.54,
+    "words": [
+      {
+        "text": "you",
+        "start": 71.826,
+        "end": 72.259
+      },
+      {
+        "text": "to",
+        "start": 72.259,
+        "end": 72.54
+      },
+      {
+        "text": "raise",
+        "start": 72.54,
+        "end": 72.54
+      }
+    ]
+  },
+  {
+    "start": 72.54,
+    "end": 74.769,
+    "words": [
+      {
+        "text": "healthy",
+        "start": 72.54,
+        "end": 73.362
+      },
+      {
+        "text": "kids",
+        "start": 73.362,
+        "end": 73.903
+      },
+      {
+        "text": "because",
+        "start": 73.903,
+        "end": 74.769
+      }
+    ]
+  },
+  {
+    "start": 74.769,
+    "end": 75.725,
+    "words": [
+      {
+        "text": "if",
+        "start": 74.769,
+        "end": 75.094
+      },
+      {
+        "text": "you",
+        "start": 75.094,
+        "end": 75.176
+      },
+      {
+        "text": "don't",
+        "start": 75.176,
+        "end": 75.725
+      }
+    ]
+  },
+  {
+    "start": 75.725,
+    "end": 77.214,
+    "words": [
+      {
+        "text": "heal,",
+        "start": 75.725,
+        "end": 76.375
+      },
+      {
+        "text": "it",
+        "start": 76.375,
+        "end": 76.7
+      },
+      {
+        "text": "makes",
+        "start": 76.7,
+        "end": 77.214
+      }
+    ]
+  },
+  {
+    "start": 77.214,
+    "end": 78.849,
+    "words": [
+      {
+        "text": "you",
+        "start": 77.214,
+        "end": 77.441
+      },
+      {
+        "text": "raise",
+        "start": 77.441,
+        "end": 78.091
+      },
+      {
+        "text": "broken",
+        "start": 78.091,
+        "end": 78.849
+      }
+    ]
+  },
+  {
+    "start": 78.849,
+    "end": 80.798,
+    "words": [
+      {
+        "text": "children",
+        "start": 78.849,
+        "end": 79.824
+      },
+      {
+        "text": "like",
+        "start": 79.824,
+        "end": 80.365
+      },
+      {
+        "text": "the",
+        "start": 80.365,
+        "end": 80.798
+      }
+    ]
+  },
+  {
+    "start": 80.798,
+    "end": 82.206,
+    "words": [
+      {
+        "text": "way",
+        "start": 80.798,
+        "end": 81.231
+      },
+      {
+        "text": "you",
+        "start": 81.231,
+        "end": 81.664
+      },
+      {
+        "text": "were",
+        "start": 81.664,
+        "end": 82.206
+      }
+    ]
+  },
+  {
+    "start": 82.206,
+    "end": 84.816,
+    "words": [
+      {
+        "text": "raised.",
+        "start": 82.206,
+        "end": 83.072
+      },
+      {
+        "text": "The",
+        "start": 84.072,
+        "end": 84.403
+      },
+      {
+        "text": "book",
+        "start": 84.403,
+        "end": 84.816
+      }
+    ]
+  },
+  {
+    "start": 84.816,
+    "end": 85.972,
+    "words": [
+      {
+        "text": "of",
+        "start": 84.816,
+        "end": 85.064
+      },
+      {
+        "text": "Psalms",
+        "start": 85.064,
+        "end": 85.642
+      },
+      {
+        "text": "10,",
+        "start": 85.642,
+        "end": 85.972
+      }
+    ]
+  },
+  {
+    "start": 85.972,
+    "end": 87.129,
+    "words": [
+      {
+        "text": "verse",
+        "start": 85.972,
+        "end": 86.468
+      },
+      {
+        "text": "10,",
+        "start": 86.468,
+        "end": 86.799
+      },
+      {
+        "text": "the",
+        "start": 86.799,
+        "end": 87.129
+      }
+    ]
+  },
+  {
+    "start": 87.129,
+    "end": 88.369,
+    "words": [
+      {
+        "text": "book",
+        "start": 87.129,
+        "end": 87.542
+      },
+      {
+        "text": "of",
+        "start": 87.542,
+        "end": 87.79
+      },
+      {
+        "text": "Psalms",
+        "start": 87.79,
+        "end": 88.369
+      }
+    ]
+  },
+  {
+    "start": 88.369,
+    "end": 89.595,
+    "words": [
+      {
+        "text": "chapter",
+        "start": 88.369,
+        "end": 89.03
+      },
+      {
+        "text": "37,",
+        "start": 89.03,
+        "end": 89.36
+      },
+      {
+        "text": "verse",
+        "start": 89.36,
+        "end": 89.595
+      }
+    ]
+  },
+  {
+    "start": 89.595,
+    "end": 90.566,
+    "words": [
+      {
+        "text": "10,",
+        "start": 89.595,
+        "end": 89.822
+      },
+      {
+        "text": "it",
+        "start": 89.822,
+        "end": 90.07
+      },
+      {
+        "text": "says,",
+        "start": 90.07,
+        "end": 90.566
+      }
+    ]
+  },
+  {
+    "start": 90.566,
+    "end": 91.971,
+    "words": [
+      {
+        "text": "though",
+        "start": 90.566,
+        "end": 91.144
+      },
+      {
+        "text": "my",
+        "start": 91.144,
+        "end": 91.392
+      },
+      {
+        "text": "father",
+        "start": 91.392,
+        "end": 91.971
+      }
+    ]
+  },
+  {
+    "start": 91.971,
+    "end": 93.127,
+    "words": [
+      {
+        "text": "and",
+        "start": 91.971,
+        "end": 92.301
+      },
+      {
+        "text": "my",
+        "start": 92.301,
+        "end": 92.549
+      },
+      {
+        "text": "mother",
+        "start": 92.549,
+        "end": 93.127
+      }
+    ]
+  },
+  {
+    "start": 93.127,
+    "end": 94.367,
+    "words": [
+      {
+        "text": "may",
+        "start": 93.127,
+        "end": 93.458
+      },
+      {
+        "text": "reject",
+        "start": 93.458,
+        "end": 94.036
+      },
+      {
+        "text": "me,",
+        "start": 94.036,
+        "end": 94.367
+      }
+    ]
+  },
+  {
+    "start": 94.367,
+    "end": 95.441,
+    "words": [
+      {
+        "text": "But",
+        "start": 94.367,
+        "end": 94.697
+      },
+      {
+        "text": "God",
+        "start": 94.697,
+        "end": 95.028
+      },
+      {
+        "text": "will",
+        "start": 95.028,
+        "end": 95.441
+      }
+    ]
+  },
+  {
+    "start": 95.441,
+    "end": 96.598,
+    "words": [
+      {
+        "text": "receive",
+        "start": 95.441,
+        "end": 96.102
+      },
+      {
+        "text": "me.",
+        "start": 96.102,
+        "end": 96.433
+      },
+      {
+        "text": "I",
+        "start": 96.433,
+        "end": 96.598
+      }
+    ]
+  },
+  {
+    "start": 96.598,
+    "end": 97.29,
+    "words": [
+      {
+        "text": "want",
+        "start": 96.598,
+        "end": 97.011
+      },
+      {
+        "text": "you",
+        "start": 97.011,
+        "end": 97.29
+      },
+      {
+        "text": "to",
+        "start": 97.29,
+        "end": 97.29
+      }
+    ]
+  },
+  {
+    "start": 97.29,
+    "end": 97.707,
+    "words": [
+      {
+        "text": "underline",
+        "start": 97.29,
+        "end": 97.29
+      },
+      {
+        "text": "the",
+        "start": 97.29,
+        "end": 97.294
+      },
+      {
+        "text": "word",
+        "start": 97.294,
+        "end": 97.707
+      }
+    ]
+  },
+  {
+    "start": 97.707,
+    "end": 98.834,
+    "words": [
+      {
+        "text": "receive.",
+        "start": 97.707,
+        "end": 98.009
+      },
+      {
+        "text": "Young",
+        "start": 98.009,
+        "end": 98.504
+      },
+      {
+        "text": "me,",
+        "start": 98.504,
+        "end": 98.834
+      }
+    ]
+  },
+  {
+    "start": 98.834,
+    "end": 99.908,
+    "words": [
+      {
+        "text": "God",
+        "start": 98.834,
+        "end": 99.165
+      },
+      {
+        "text": "does",
+        "start": 99.165,
+        "end": 99.578
+      },
+      {
+        "text": "not",
+        "start": 99.578,
+        "end": 99.908
+      }
+    ]
+  },
+  {
+    "start": 99.908,
+    "end": 100.9,
+    "words": [
+      {
+        "text": "look",
+        "start": 99.908,
+        "end": 100.321
+      },
+      {
+        "text": "at",
+        "start": 100.321,
+        "end": 100.569
+      },
+      {
+        "text": "you",
+        "start": 100.569,
+        "end": 100.9
+      }
+    ]
+  },
+  {
+    "start": 100.9,
+    "end": 101.891,
+    "words": [
+      {
+        "text": "as",
+        "start": 100.9,
+        "end": 101.148
+      },
+      {
+        "text": "a",
+        "start": 101.148,
+        "end": 101.313
+      },
+      {
+        "text": "broken",
+        "start": 101.313,
+        "end": 101.891
+      }
+    ]
+  },
+  {
+    "start": 101.891,
+    "end": 103.216,
+    "words": [
+      {
+        "text": "and",
+        "start": 101.891,
+        "end": 101.982
+      },
+      {
+        "text": "rejected",
+        "start": 101.982,
+        "end": 102.638
+      },
+      {
+        "text": "child.",
+        "start": 102.638,
+        "end": 103.216
+      }
+    ]
+  },
+  {
+    "start": 103.216,
+    "end": 104.373,
+    "words": [
+      {
+        "text": "He",
+        "start": 103.216,
+        "end": 103.464
+      },
+      {
+        "text": "loves",
+        "start": 103.464,
+        "end": 103.96
+      },
+      {
+        "text": "you.",
+        "start": 103.96,
+        "end": 104.373
+      }
+    ]
+  },
+  {
+    "start": 104.373,
+    "end": 105.777,
+    "words": [
+      {
+        "text": "He",
+        "start": 104.373,
+        "end": 104.621
+      },
+      {
+        "text": "receives",
+        "start": 104.621,
+        "end": 105.364
+      },
+      {
+        "text": "you.",
+        "start": 105.364,
+        "end": 105.777
+      }
+    ]
+  },
+  {
+    "start": 105.777,
+    "end": 106.436,
+    "words": [
+      {
+        "text": "He",
+        "start": 105.777,
+        "end": 105.918
+      },
+      {
+        "text": "welcomes",
+        "start": 105.918,
+        "end": 106.023
+      },
+      {
+        "text": "you.",
+        "start": 106.023,
+        "end": 106.436
+      }
+    ]
+  },
+  {
+    "start": 106.436,
+    "end": 107.428,
+    "words": [
+      {
+        "text": "All",
+        "start": 106.436,
+        "end": 106.767
+      },
+      {
+        "text": "you",
+        "start": 106.767,
+        "end": 107.097
+      },
+      {
+        "text": "can",
+        "start": 107.097,
+        "end": 107.428
+      }
+    ]
+  },
+  {
+    "start": 107.428,
+    "end": 108.75,
+    "words": [
+      {
+        "text": "do",
+        "start": 107.428,
+        "end": 107.675
+      },
+      {
+        "text": "for",
+        "start": 107.675,
+        "end": 108.006
+      },
+      {
+        "text": "yourself",
+        "start": 108.006,
+        "end": 108.75
+      }
+    ]
+  },
+  {
+    "start": 108.75,
+    "end": 109.824,
+    "words": [
+      {
+        "text": "right",
+        "start": 108.75,
+        "end": 109.245
+      },
+      {
+        "text": "now",
+        "start": 109.245,
+        "end": 109.576
+      },
+      {
+        "text": "is",
+        "start": 109.576,
+        "end": 109.824
+      }
+    ]
+  },
+  {
+    "start": 109.824,
+    "end": 110.218,
+    "words": [
+      {
+        "text": "to",
+        "start": 109.824,
+        "end": 110.072
+      },
+      {
+        "text": "heal",
+        "start": 110.072,
+        "end": 110.218
+      },
+      {
+        "text": "and",
+        "start": 110.218,
+        "end": 110.218
+      }
+    ]
+  },
+  {
+    "start": 110.218,
+    "end": 110.627,
+    "words": [
+      {
+        "text": "move",
+        "start": 110.218,
+        "end": 110.218
+      },
+      {
+        "text": "on",
+        "start": 110.218,
+        "end": 110.379
+      },
+      {
+        "text": "so",
+        "start": 110.379,
+        "end": 110.627
+      }
+    ]
+  },
+  {
+    "start": 110.627,
+    "end": 111.867,
+    "words": [
+      {
+        "text": "that",
+        "start": 110.627,
+        "end": 111.04
+      },
+      {
+        "text": "you",
+        "start": 111.04,
+        "end": 111.371
+      },
+      {
+        "text": "raise",
+        "start": 111.371,
+        "end": 111.867
+      }
+    ]
+  },
+  {
+    "start": 111.867,
+    "end": 113.404,
+    "words": [
+      {
+        "text": "healthy",
+        "start": 111.867,
+        "end": 112.528
+      },
+      {
+        "text": "children",
+        "start": 112.528,
+        "end": 113.271
+      },
+      {
+        "text": "and",
+        "start": 113.271,
+        "end": 113.404
+      }
+    ]
+  },
+  {
+    "start": 113.404,
+    "end": 114.013,
+    "words": [
+      {
+        "text": "you",
+        "start": 113.404,
+        "end": 113.404
+      },
+      {
+        "text": "become",
+        "start": 113.404,
+        "end": 113.848
+      },
+      {
+        "text": "a",
+        "start": 113.848,
+        "end": 114.013
+      }
+    ]
+  },
+  {
+    "start": 114.013,
+    "end": 115.335,
+    "words": [
+      {
+        "text": "good",
+        "start": 114.013,
+        "end": 114.426
+      },
+      {
+        "text": "version",
+        "start": 114.426,
+        "end": 115.087
+      },
+      {
+        "text": "of",
+        "start": 115.087,
+        "end": 115.335
+      }
+    ]
+  },
+  {
+    "start": 115.335,
+    "end": 116.605,
+    "words": [
+      {
+        "text": "yourself",
+        "start": 115.335,
+        "end": 116.079
+      },
+      {
+        "text": "for",
+        "start": 116.079,
+        "end": 116.409
+      },
+      {
+        "text": "you.",
+        "start": 116.409,
+        "end": 116.605
+      }
+    ]
+  }
+]

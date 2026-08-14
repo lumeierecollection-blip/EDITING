@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   AbsoluteFill,
   useCurrentFrame,
@@ -10,164 +10,107 @@ import {
   continueRender,
 } from "remotion";
 
-// Self-hosted (not fetched from Google Fonts at render time - the sandboxed
-// render browser doesn't trust the outbound TLS proxy for third-party CDNs).
-const newsreaderFamily = "Newsreader Italic Local";
-const geistFamily = "Geist Medium Local";
+// minimalist-design-skill (zeke/minimalist-design-skill): single typeface,
+// single size, single weight - no hierarchy through typography, no
+// ornamentation (no rules, no kickers, no borders-as-decoration).
+const fontFamily = "IBM Plex Mono Keyword Local";
+const BG = "#0C0A09"; // dark-mode token
+const TEXT = "#FAFAF9"; // dark-mode token
 
-const newsreaderHandle = delayRender("Loading Newsreader");
-const geistHandle = delayRender("Loading Geist");
-
-const newsreaderFace = new FontFace(
-  newsreaderFamily,
-  `url('${staticFile("fonts/Newsreader-Italic.ttf")}')`,
-  { style: "italic", weight: "400" }
-);
-const geistFace = new FontFace(
-  geistFamily,
-  `url('${staticFile("fonts/Geist-Medium.ttf")}')`,
-  { weight: "500" }
-);
-
-newsreaderFace
-  .load()
-  .then((f) => {
-    document.fonts.add(f);
-    continueRender(newsreaderHandle);
-  })
-  .catch(() => continueRender(newsreaderHandle));
-geistFace
-  .load()
-  .then((f) => {
-    document.fonts.add(f);
-    continueRender(geistHandle);
-  })
-  .catch(() => continueRender(geistHandle));
-
-// Premium/Elegance motion archetype (motion-design-skill):
-// 500-600ms entrance, cubic-bezier(0.4,0,0.2,1), 0% overshoot, gentle arc.
-// Minimalist editorial palette (open-design minimalist-skill):
-// warm bone canvas, charcoal ink, single muted pastel accent, hairline rule.
-const PREMIUM_EASE = Easing.bezier(0.4, 0, 0.2, 1);
+// kinetic-typography-skills (iart-ai): word-level mask/clip reveal,
+// ease-out cubic-bezier(0.16,1,0.3,1), 400-600ms per fragment,
+// 40-70ms word stagger.
+const REVEAL_EASE = Easing.bezier(0.16, 1, 0.3, 1);
+const REVEAL_MS = 480;
+const STAGGER_MS = 55;
 const FADE_OUT_FRAMES = 12;
 
-export const Keyword = ({
-  text = "",
-  accentWord = "",
-  totalFrames = 90,
-}) => {
+const useLocalFont = () => {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    const handle = delayRender("Loading IBM Plex Mono (Keyword)");
+    const face = new FontFace(
+      fontFamily,
+      `url('${staticFile("fonts/IBMPlexMono-Regular.ttf")}')`,
+      { weight: "400", style: "normal" }
+    );
+    face
+      .load()
+      .then((f) => {
+        document.fonts.add(f);
+        setReady(true);
+        continueRender(handle);
+      })
+      .catch(() => {
+        setReady(true);
+        continueRender(handle);
+      });
+  }, []);
+  return ready;
+};
+
+const Word = ({ text, index, frame, fps }) => {
+  const revealFrames = fps * (REVEAL_MS / 1000);
+  const startFrame = index * fps * (STAGGER_MS / 1000);
+  const progress = interpolate(
+    frame,
+    [startFrame, startFrame + revealFrames],
+    [0, 1],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: REVEAL_EASE }
+  );
+  const translateY = (1 - progress) * 100;
+  return (
+    <span style={{ display: "inline-block", overflow: "hidden", verticalAlign: "bottom" }}>
+      <span style={{ display: "inline-block", transform: `translateY(${translateY}%)` }}>
+        {text}
+      </span>
+    </span>
+  );
+};
+
+export const Keyword = ({ text = "", totalFrames = 90 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const fontReady = useLocalFont();
   const words = text.trim().split(/\s+/);
 
-  const entranceFrames = fps * 0.55; // 550ms, Premium archetype
-
-  const entranceFade = interpolate(frame, [0, entranceFrames], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: PREMIUM_EASE,
-  });
   const exitFade = interpolate(
     frame,
     [totalFrames - FADE_OUT_FRAMES, totalFrames],
     [1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) }
   );
-  const opacity = Math.min(entranceFade, exitFade);
 
-  // Primary: gentle vertical settle with a slight horizontal arc, no overshoot.
-  const driftY = interpolate(frame, [0, entranceFrames], [22, 0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: PREMIUM_EASE,
-  });
-  const arcMidX = interpolate(
-    frame,
-    [0, entranceFrames / 2, entranceFrames],
-    [0, 8, 0],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: PREMIUM_EASE }
-  );
-
-  // Secondary layer: hairline rule draws in ~100ms after the primary lands.
-  const ruleDelay = fps * 0.1;
-  const ruleWidth = interpolate(
-    frame,
-    [entranceFrames + ruleDelay, entranceFrames + ruleDelay + fps * 0.4],
-    [0, 100],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: PREMIUM_EASE }
-  );
+  if (!fontReady) {
+    return <AbsoluteFill style={{ backgroundColor: BG }} />;
+  }
 
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: "#F7F6F3",
+        backgroundColor: BG,
         justifyContent: "center",
         alignItems: "center",
-        padding: "0 88px",
+        padding: "0 80px",
       }}
     >
-      {/* Ambient layer: static low-opacity radial gradient for depth, no empty flatness */}
-      <AbsoluteFill
-        style={{
-          background:
-            "radial-gradient(circle at 50% 42%, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 60%)",
-        }}
-      />
       <div
         style={{
-          opacity,
-          transform: `translate(${arcMidX}px, ${driftY}px)`,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          opacity: exitFade,
+          fontFamily,
+          fontWeight: 400,
+          fontSize: 46,
+          lineHeight: 1.6,
+          textAlign: "center",
+          color: TEXT,
         }}
       >
-        <div
-          style={{
-            fontFamily: newsreaderFamily,
-            fontStyle: "italic",
-            fontWeight: 400,
-            fontSize: 62,
-            lineHeight: 1.15,
-            letterSpacing: "-0.02em",
-            textAlign: "center",
-            color: "#111111",
-          }}
-        >
-          {words.map((w, i) => {
-            const isAccent =
-              accentWord && w.toLowerCase().includes(accentWord.toLowerCase());
-            return (
-              <span key={i} style={{ color: isAccent ? "#8A5A00" : "#111111" }}>
-                {w}
-                {i < words.length - 1 ? " " : ""}
-              </span>
-            );
-          })}
-        </div>
-        <div
-          style={{
-            marginTop: 22,
-            width: `${ruleWidth}%`,
-            maxWidth: 220,
-            height: 1,
-            backgroundColor: "rgba(0,0,0,0.18)",
-          }}
-        />
-        <div
-          style={{
-            marginTop: 18,
-            opacity: ruleWidth > 0 ? Math.min(ruleWidth / 40, 1) : 0,
-            fontFamily: geistFamily,
-            fontWeight: 500,
-            fontSize: 15,
-            letterSpacing: "0.14em",
-            textTransform: "uppercase",
-            color: "#787774",
-          }}
-        >
-          dear younger me
-        </div>
+        {words.map((w, i) => (
+          <React.Fragment key={i}>
+            <Word text={w} index={i} frame={frame} fps={fps} />
+            {i < words.length - 1 ? " " : ""}
+          </React.Fragment>
+        ))}
       </div>
     </AbsoluteFill>
   );

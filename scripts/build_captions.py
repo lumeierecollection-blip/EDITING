@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Build word-level timing mapped onto the jump-cut timeline, then emit
-a minimal CapCut-style ASS caption file (small word groups, current word
-highlighted, no bounce/scale animation)."""
+caption data as JSON for the Remotion kinetic-typography caption
+composition (motion-skills / kinetic-typography-skills: mask-reveal per
+word, no karaoke color-sweep, no CapCut-style highlight)."""
 import argparse
+import json
 import re
 
 TRIM_START = 0.8  # matches -ss used when producing clip1_trimmed_normalized.mp4
@@ -74,31 +76,8 @@ def chunk_words(words, per_chunk=3):
     return chunks
 
 
-def fmt_ass_time(t):
-    h = int(t // 3600)
-    m = int((t % 3600) // 60)
-    s = t % 60
-    return f"{h:d}:{m:02d}:{s:05.2f}"
-
-
-ASS_HEADER = """[Script Info]
-ScriptType: v4.00+
-PlayResX: 1080
-PlayResY: 1920
-WrapStyle: 2
-ScaledBorderAndShadow: yes
-
-[V4+ Styles]
-Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,Geist,56,&H00FFFFFF,&H003BA7D9,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,3,0,2,60,60,260,1
-
-[Events]
-Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-"""
-
-
-def build_ass(chunks):
-    lines = [ASS_HEADER]
+def build_json(chunks):
+    out = []
     for group in chunks:
         if not group:
             continue
@@ -106,30 +85,22 @@ def build_ass(chunks):
         chunk_end = group[-1][2]
         if chunk_end <= chunk_start:
             continue
-        for i, (word, w_start, w_end) in enumerate(group):
-            parts = []
-            for j, (w2, _, _) in enumerate(group):
-                if j == i:
-                    parts.append("{\\c&H3BA7D9&}" + w2 + "{\\c&HFFFFFF&}")
-                else:
-                    parts.append(w2)
-            text = " ".join(parts)
-            seg_start = w_start
-            seg_end = group[i + 1][1] if i + 1 < len(group) else chunk_end
-            if seg_end <= seg_start:
-                seg_end = seg_start + 0.05
-            lines.append(
-                f"Dialogue: 0,{fmt_ass_time(seg_start)},{fmt_ass_time(seg_end)},"
-                f"Caption,,0,0,0,,{text}"
-            )
-    return "\n".join(lines)
+        out.append({
+            "start": round(chunk_start, 3),
+            "end": round(chunk_end, 3),
+            "words": [
+                {"text": w, "start": round(s, 3), "end": round(e, 3)}
+                for (w, s, e) in group
+            ],
+        })
+    return out
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--keep-segments", default="scripts/keep_segments.tsv")
     ap.add_argument("--transcript", default="scripts/transcript.tsv")
-    ap.add_argument("--out", default="scripts/captions.ass")
+    ap.add_argument("--out", default="scripts/captions.json")
     ap.add_argument("--words-per-chunk", type=int, default=3)
     ap.add_argument("--dump-words", default=None)
     args = ap.parse_args()
@@ -145,10 +116,10 @@ def main():
                 f.write(f"{s:.2f}\t{e:.2f}\t{w}\n")
 
     chunks = chunk_words(words, args.words_per_chunk)
-    ass = build_ass(chunks)
+    data = build_json(chunks)
     with open(args.out, "w") as f:
-        f.write(ass)
-    print(f"words={len(words)} chunks={len(chunks)} -> {args.out}")
+        json.dump(data, f, indent=2)
+    print(f"words={len(words)} chunks={len(data)} -> {args.out}")
 
 
 if __name__ == "__main__":
