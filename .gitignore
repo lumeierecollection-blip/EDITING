@@ -1,0 +1,9 @@
+raw/*
+!raw/.gitkeep
+output/*
+!output/.gitkeep
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
