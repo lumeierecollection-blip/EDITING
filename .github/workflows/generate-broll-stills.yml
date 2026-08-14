@@ -1,0 +1,33 @@
+name: Generate B-roll stills
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install CPU deps
+        run: |
+          pip install --index-url https://download.pytorch.org/whl/cpu torch
+          pip install diffusers transformers accelerate safetensors pillow
+
+      - name: Generate stills
+        run: python scripts/generate_broll_stills.py
+
+      - name: Commit stills
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add motion/public/broll-stills
+          git diff --cached --quiet || git commit -m "Generate B-roll stills via sd-turbo (CI)"
+          git push

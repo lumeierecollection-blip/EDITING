@@ -16,11 +16,11 @@ import captionsData from "./captions.json";
 // that never appears in the text or footage.
 const CHROMA_KEY = "#00FF00"; // greenscreen, so ffmpeg's despill filter can clean spill
 
-// Monochrome, single weight, no color hierarchy - no karaoke/CapCut
-// highlight color here, ever. Font: Space Grotesk (motion-skills /
-// kinetic-typography-skills - a grotesk built for display/kinetic use,
-// reads cleanly in motion, unlike a terminal-mono face).
-const fontFamily = "Space Grotesk Captions Local";
+// Monochrome, no color hierarchy - no karaoke/CapCut highlight color
+// here, ever. Font: Fraunces (warm variable serif, not a grotesk/mono -
+// the content is a personal letter, not a tech-product demo, so the
+// type should read human rather than robotic).
+const fontFamily = "Fraunces Captions Local";
 const TEXT_COLOR = "#FAFAF9";
 
 // Font loading is scoped to this component's own mount (not module-level)
@@ -28,10 +28,10 @@ const TEXT_COLOR = "#FAFAF9";
 const useLocalFont = () => {
   const [ready, setReady] = useState(false);
   useEffect(() => {
-    const handle = delayRender("Loading Space Grotesk (Captions)");
+    const handle = delayRender("Loading Fraunces (Captions)");
     const face = new FontFace(
       fontFamily,
-      `url('${staticFile("fonts/SpaceGrotesk-Medium.ttf")}')`,
+      `url('${staticFile("fonts/Fraunces-Medium.ttf")}')`,
       { weight: "500", style: "normal" }
     );
     face
