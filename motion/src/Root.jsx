@@ -11,7 +11,7 @@ export const RemotionRoot = () => {
       fps={30}
       width={480}
       height={864}
-      defaultProps={{ text: "", accentWord: "" }}
+      defaultProps={{ text: "", accentWord: "", totalFrames: 90 }}
     />
   );
 };

@@ -90,7 +90,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,Montserrat,58,&H00FFFFFF,&H0000D7FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,0,2,60,60,260,1
+Style: Caption,Geist,56,&H00FFFFFF,&H003BA7D9,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,3,0,2,60,60,260,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -110,7 +110,7 @@ def build_ass(chunks):
             parts = []
             for j, (w2, _, _) in enumerate(group):
                 if j == i:
-                    parts.append("{\\c&H00D7FF&}" + w2 + "{\\c&HFFFFFF&}")
+                    parts.append("{\\c&H3BA7D9&}" + w2 + "{\\c&HFFFFFF&}")
                 else:
                     parts.append(w2)
             text = " ".join(parts)
