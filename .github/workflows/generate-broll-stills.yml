@@ -2,6 +2,13 @@ name: Generate B-roll stills
 
 on:
   workflow_dispatch: {}
+  push:
+    branches:
+      - claude/video-editing-palmier-pro-h0cf2q
+    paths:
+      - "scripts/generate_broll_stills.py"
+      - ".github/workflows/generate-broll-stills.yml"
+      - ".github/trigger-broll"
 
 jobs:
   generate:
