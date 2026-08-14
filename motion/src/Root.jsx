@@ -13,7 +13,7 @@ export const RemotionRoot = () => {
         fps={30}
         width={480}
         height={864}
-        defaultProps={{ text: "", accentWord: "", totalFrames: 90 }}
+        defaultProps={{ text: "", totalFrames: 90, image: null, panDirection: 1 }}
       />
       <Composition
         id="Captions"
