@@ -7,3 +7,6 @@ output/*
 *.mkv
 *.avi
 *.webm
+
+# Node
+motion/node_modules/
